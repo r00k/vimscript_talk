@@ -1,13 +1,32 @@
 Outline:
 
   Intro
+    tpope quote
 
-  Lots of examples
+  Examples
+    function
+    echo
+    truthiness - 0, 1
+    vars with <char>: prefix are scoped
 
   Pointers to more info
 
 
 
-
 Links for learning more:
+  Something in :help?
   Learn vim script the hard way - http://learnvimscriptthehardway.stevelosh.com/
+
+
+
+Ideas:
+  use real-world examples from vimrcs
+  maybe some plugin source
+  build in complexity
+  introduce new operators with full examples
+
+
+
+Todo:
+  look in :help for a guide
+
