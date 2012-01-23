@@ -1,0 +1,13 @@
+Outline:
+
+  Intro
+
+  Lots of examples
+
+  Pointers to more info
+
+
+
+
+Links for learning more:
+  Learn vim script the hard way - http://learnvimscriptthehardway.stevelosh.com/
