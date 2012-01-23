@@ -49,6 +49,49 @@ endfunction
 
 
 
+Let's talk thruthiness:
+
+  value       truthy?
+  -------------------
+  1           yes
+  0           no
+  
+
+
+
+
+
+
+
+  value               truthy?
+  ---------------------------
+  'hey'               no
+  '8 days a week'     yes
+  
+
+
+
+
+
+
+
+
+
+
+
+Guess what other language does this.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 " Lets within a function! are local
@@ -63,6 +106,7 @@ endfunction!
 
 echo LetsAreLocal()
 echo LetsAreLocalForReal()
+
 
 
 
@@ -88,7 +132,7 @@ function! MergeTabs()
   execute "buffer" bufferName
 endfunction!
 
- 
+
 
 " Run a cucumber scenario or rspec spec.
 function! RunCurrentTest()
@@ -103,15 +147,20 @@ function! CorrectTestRunner()
   if match(expand('%'), '\.feature$') != -1
     return "cucumber"
   elseif match(expand('%'), '_spec\.rb$') != -1
-     return "rspec"
-   endif
+    return "rspec"
+  endif
 endfunction!
 
 
-" Use of substitute to swap ~/ for expanded path
+
+
+" Use of substitute to swap /Users/amir/ for ~/
 function! ExpandedCurrentDirectory()
-  return substitute(getcwd(), '/Users/amir/', "~/", "g")
+  " Last arg is empty, but you must pass all args to funcs.
+  return substitute(getcwd(), '/Users/ben/', "~/", '')
 endfunction!
+
+echo ExpandedCurrentDirectory()
 
 
 
@@ -127,15 +176,7 @@ function! ExtractUrlFromCurrentLine()
   return matchstr(getline("."), "http[^ ]*")
 endfunction!
 
-"blah blah http://thoughtbot.com/live-vim-cams blarg barg
-
-
-
-
-
-
-
-
+blah blah http://thoughtbot.com/live-vim-cams blarg barg
 
 function! OpenUrlOnCurrentLineInBrowser()
   let url = ExtractUrlFromCurrentLine()
@@ -146,13 +187,14 @@ endfunction
 
 
 
+
                          The End
 
-      Notes: http://github.com/r00k/vimscript_talk
+       Notes: http://github.com/r00k/vimscript_talk
 
-      Me:    http://twitter.com/r00k
+       Me:    http://twitter.com/r00k
 
-    
+
 
 
 

@@ -31,24 +31,6 @@ Outline:
 
       
 
-  Pointers to more info
-
-
-
-Links for learning more:
-  Something in :help?
+Useful links:
   Learn vim script the hard way - http://learnvimscriptthehardway.stevelosh.com/
-
-
-
-Ideas:
-  use real-world examples from vimrcs
-  maybe some plugin source
-  build in complexity
-  introduce new operators with full examples
-
-
-
-Todo:
-  look in :help for a guide
-
+  usr_41.txt in help
