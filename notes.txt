@@ -5,9 +5,16 @@ Outline:
 
   Examples
     function
+      must start with capitals if unscoped
     echo
     truthiness - 0, 1
+      0 false
+      1 true
+      "blah" is false
+      "10hey" is true - strings with int prefix are coerced to int
+        beer joke
     vars with <char>: prefix are scoped
+      :h internal-variables
 
   Pointers to more info
 

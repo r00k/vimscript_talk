@@ -1,3 +1,26 @@
+" Hello world
+function HellowWorld()
+  echo "Hello world"
+endfunction
+
+" Calling a function
+call HellowWorld()
+
+" Return values
+function ThisReturnsSomething()
+  return "I done returned this for you"
+endfunction
+
+" Print the return val
+" Note that call just discards return values
+echo ThisReturnsSomething()
+
+" Default return value is 0. 
+function ThisReturnsZeroByDefault()
+endfunction
+
+echo ThisReturnsZeroByDefault()
+
 " Merge a tab into a split in the previous window
 function! MergeTabs()
   if tabpagenr() == 1
