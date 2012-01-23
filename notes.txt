@@ -2,6 +2,7 @@ Outline:
 
   Intro
     tpope quote
+    notes are on GH
 
   Examples
     function
