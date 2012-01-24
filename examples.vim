@@ -3,7 +3,7 @@ function! HelloWorld()
   echo "Hello world"
 endfunction!
 
-" Calling a function!
+" Calling a function
 call HelloWorld()
 
 
@@ -35,8 +35,8 @@ endfunction!
 echo ThisReturnsZeroByDefault()
 
 " Take advantage of the default return value
-function! IsFooTooBig(foo)
-  " Note var scoping
+function! FooIsTooBig(foo)
+  " Ooh, variable scoping!
   if a:foo > 10
     return 1
   endif
@@ -94,7 +94,7 @@ Guess what other language does this.
 
 
 
-" Lets within a function! are local
+" Local vars are declared with 'let'
 function! LetsAreLocal()
   let foo = "bar"
   return foo
@@ -154,7 +154,10 @@ endfunction!
 
 
 
-" Use of substitute to swap /Users/amir/ for ~/
+
+
+
+" Use of substitute to swap /Users/ben/ for ~/
 function! ExpandedCurrentDirectory()
   " Last arg is empty, but you must pass all args to funcs.
   return substitute(getcwd(), '/Users/ben/', "~/", '')
@@ -183,6 +186,10 @@ function! OpenUrlOnCurrentLineInBrowser()
   " Note the lack of commas between arguments
   exec "!open ~/bin/chrome" url
 endfunction
+
+
+
+
 
 
 

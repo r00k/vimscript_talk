@@ -29,7 +29,6 @@ Outline:
         % - current file name
         %:p - current file path
 
-      
 
 Useful links:
   Learn vim script the hard way - http://learnvimscriptthehardway.stevelosh.com/
