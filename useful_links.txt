@@ -1,0 +1,3 @@
+Useful links:
+  Learn vim script the hard way - http://learnvimscriptthehardway.stevelosh.com/
+  usr_41.txt in help
